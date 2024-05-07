@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <!-- 
+      -- ICON TO PAGE
+     -->
+    <link
+      rel="shortcut icon"
+      href="public/icon.png"
+      type="image/x-icon"
+    />
+    <!-- 
+      -- CSS STYLE FILES
+     -->
+    <link
+      rel="stylesheet"
+      href="src/css/main.css"
+    />
+    <!-- 
+      -- JAVASCRIPT FILES
+     -->
+    <script
+      type="module"
+      src="src/js/main.js"
+      defer
+    ></script>
+    <!-- 
+      -- TITLE DOCUMENT
+     -->
+    <title>QRCode</title>
+  </head>
+  <body>
+    <!-- 
+      -- CABEÇALHO DA PÁGINA
+     -->
+    <header id="cont-header">
+      <span id="icon">
+        <img
+          src="public/icon.png"
+          alt="icon qrcode"
+        />
+      </span>
+      <nav id="nav-list">
+        <a
+          href="https://rhoglas.cloud"
+          target="_blank"
+          rel="noopener"
+          ><img
+            class="icon"
+            src="public/user.svg"
+            alt="Portifólio"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/rhoglas"
+          target="_blank"
+          rel="noopener"
+          ><img
+            class="icon"
+            src="public/linkedin.svg"
+            alt="linkedin"
+        /></a>
+        <a
+          href="https://github.com/Rhoglas"
+          target="_blank"
+          rel="noopener"
+          ><img
+            class="icon"
+            src="public/github.svg"
+            alt="github"
+        /></a>
+      </nav>
+    </header>
+    <!-- 
+      -- CONTRÚDO DA PÁGINA
+     -->
+    <section id="cont-main">
+      <h1>Gerador de QRcode</h1>
+      <section id="cont-view">
+        <section id="controls">
+          <input
+            aria-label="text input"
+            placeholder="Texto ou uma URL."
+            autocomplete="off"
+            type="text"
+            data-input="secret"
+            id="secret"
+          />
+          <section id="cont-btn">
+            <button
+              class="btn"
+              type="button"
+              data-btn="generate"
+            >
+              Gerar
+            </button>
+            <button
+              class="btn"
+              type="button"
+              data-btn="clear"
+            >
+              Limpar
+            </button>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-- 
+      -- RODAPÉ DA PÁGINA
+     -->
+    <footer id="cont-footer">
+      <p>Feito por <a href="https://rhoglas.cloud">Rhoglas</a>!</p>
+    </footer>
+  </body>
+</html>
